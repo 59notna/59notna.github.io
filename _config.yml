@@ -1,0 +1,8 @@
+title: Cruiz Entertainment
+lang: sv
+defaults:
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: default

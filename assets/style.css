@@ -1,0 +1,27 @@
+:root{color-scheme:dark;--ink:#edf1f6;--cyan:#39deef;--pink:#ff428f;--line:#353641;font-family:"Segoe UI",Arial,sans-serif;color:var(--ink);background:#090a10}
+*{box-sizing:border-box}
+body{margin:0}
+header,footer,main{width:min(1380px,92%);margin:auto}
+header,footer{display:flex;align-items:center;justify-content:space-between;padding:1.4rem 0}
+a{color:inherit;text-underline-offset:.25em}
+a:focus-visible{outline:3px solid var(--cyan);outline-offset:5px}
+.brand,h1,h2,h3{font-family:Impact,"Arial Black",sans-serif}
+.brand{text-decoration:none;font-size:1.8rem;line-height:1}
+.brand span,.kicker{display:block;font:700 .7rem/1.5 Consolas,monospace;letter-spacing:.14em;text-transform:uppercase;color:var(--cyan)}
+.hero{position:relative;isolation:isolate;display:grid;align-items:end;min-height:clamp(360px,62vh,720px);overflow:hidden;border:1px solid var(--line);background:#10101b}
+.hero img{position:absolute;z-index:-2;inset:0 0 0 auto;width:72%;height:100%;object-fit:cover;object-position:center 45%}
+.hero:before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,#090a10 5%,#090a10cc 28%,transparent 75%)}
+.hero-copy{padding:clamp(1.4rem,5vw,5rem)}
+h1{font-size:clamp(4rem,9vw,9rem);letter-spacing:-.055em;line-height:.88;text-transform:uppercase;margin:.15em 0 .28em}
+h1 em{color:var(--cyan);font-style:normal}
+.button{background:var(--ink);color:#101118;display:inline-block;padding:.8rem 1.15rem;text-decoration:none;font-weight:700}
+.button:hover{background:var(--cyan)}
+#projekt{padding:2.8rem 0}
+h2{font-size:clamp(2rem,4vw,3.3rem);margin:0 0 1.2rem;letter-spacing:-.035em}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.4rem}
+article{border-top:2px solid var(--pink);padding:1rem 0}
+h3{font-size:1.7rem;margin:.4rem 0}
+article p,.prose{line-height:1.65;color:#c7cbd7}
+footer{border-top:1px solid var(--line);color:#bfc2cc;font-size:.9rem}
+.prose{max-width:76ch;margin:3rem 0}.prose img{max-width:100%}.prose pre{overflow:auto}
+@media(max-width:700px){.grid{grid-template-columns:1fr;gap:.3rem}.hero img{width:100%}.hero:before{background:linear-gradient(90deg,#090a10de,transparent)}}
