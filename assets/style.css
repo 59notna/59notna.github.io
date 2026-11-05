@@ -31,3 +31,4 @@ header nav,.download-links{display:flex;align-items:center;gap:clamp(.8rem,2vw,2
 .download-links small{display:block;font-weight:400}.download-links{margin:1.4rem 0}
 @media(max-width:800px){.download-section{grid-template-columns:1fr}}
 .install-steps{padding-inline-start:1.4rem;color:#c7cbd7;line-height:1.6}.install-steps li+li{margin-top:.75rem}.install-steps li::marker{color:var(--cyan)}
+.wheel-tip{margin-top:1.5rem;padding:1rem 1.25rem;border-inline-start:3px solid var(--cyan);background:#111725}.wheel-tip h3{font-size:1.3rem}.wheel-tip p:last-child{margin-bottom:0}
