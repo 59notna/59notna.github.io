@@ -30,3 +30,4 @@ header nav,.download-links{display:flex;align-items:center;gap:clamp(.8rem,2vw,2
 .wallpaper-preview{width:100%;height:auto;display:block}.download-section p:not(.kicker){color:#c7cbd7;line-height:1.6}
 .download-links small{display:block;font-weight:400}.download-links{margin:1.4rem 0}
 @media(max-width:800px){.download-section{grid-template-columns:1fr}}
+.install-steps{padding-inline-start:1.4rem;color:#c7cbd7;line-height:1.6}.install-steps li+li{margin-top:.75rem}.install-steps li::marker{color:var(--cyan)}

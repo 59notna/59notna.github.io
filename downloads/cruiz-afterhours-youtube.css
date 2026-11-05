@@ -1,0 +1,47 @@
+/* Cruiz Afterhours | Enhancer for YouTube | Cruiz Entertainment
+   Edit these four colours to remix the theme. */
+html:root {
+  --cruiz-night: #090c14;
+  --cruiz-panel: #111725;
+  --cruiz-cyan: #48e6f1;
+  --cruiz-pink: #ff438e;
+}
+html:root, html:root ytd-app {
+  --yt-spec-base-background: var(--cruiz-night) !important;
+  --yt-spec-raised-background: var(--cruiz-panel) !important;
+  --yt-spec-menu-background: var(--cruiz-panel) !important;
+  --yt-spec-brand-background-primary: var(--cruiz-night) !important;
+  --yt-spec-text-primary: #f5f6fa !important;
+  --yt-spec-text-secondary: #b6bfce !important;
+  --yt-spec-icon-active-other: #f5f6fa !important;
+  --yt-spec-icon-inactive: #b6bfce !important;
+  --yt-spec-call-to-action: var(--cruiz-cyan) !important;
+  --yt-spec-badge-chip-background: #242a39 !important;
+  --efyt-accent-color: var(--cruiz-cyan) !important;
+}
+html:root ytd-app {
+  color: var(--yt-spec-text-primary);
+  background-color: var(--cruiz-night) !important;
+}
+ytd-masthead #background {
+  background: linear-gradient(105deg, #102029, var(--cruiz-night) 55%, #231324) !important;
+  border-bottom: 1px solid #31414b;
+}
+ytd-watch-flexy #above-the-fold #title h1 {
+  border-inline-start: 3px solid var(--cruiz-cyan);
+  padding-inline-start: .55em;
+}
+ytd-rich-item-renderer:hover :is(#video-title, .yt-lockup-metadata-view-model__title),
+ytd-compact-video-renderer:hover #video-title {
+  color: var(--cruiz-cyan) !important;
+}
+.html5-video-player .ytp-play-progress {
+  background: linear-gradient(90deg,var(--cruiz-cyan),var(--cruiz-pink)) !important;
+}
+.html5-video-player .ytp-scrubber-button {
+  background-color: var(--cruiz-pink) !important;
+}
+ytd-app :is(a,button):focus-visible {
+  outline: 2px solid var(--cruiz-cyan) !important;
+  outline-offset: 2px;
+}
