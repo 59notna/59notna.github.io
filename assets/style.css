@@ -25,3 +25,8 @@ article p,.prose{line-height:1.65;color:#c7cbd7}
 footer{border-top:1px solid var(--line);color:#bfc2cc;font-size:.9rem}
 .prose{max-width:76ch;margin:3rem 0}.prose img{max-width:100%}.prose pre{overflow:auto}
 @media(max-width:700px){.grid{grid-template-columns:1fr;gap:.3rem}.hero img{width:100%}.hero:before{background:linear-gradient(90deg,#090a10de,transparent)}}
+header nav,.download-links{display:flex;align-items:center;gap:clamp(.8rem,2vw,2rem);flex-wrap:wrap}
+.download-section{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(1.2rem,4vw,4rem);align-items:center;padding:2rem 0 4rem;border-top:1px solid var(--line)}
+.wallpaper-preview{width:100%;height:auto;display:block}.download-section p:not(.kicker){color:#c7cbd7;line-height:1.6}
+.download-links small{display:block;font-weight:400}.download-links{margin:1.4rem 0}
+@media(max-width:800px){.download-section{grid-template-columns:1fr}}
